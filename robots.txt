@@ -1,0 +1,5 @@
+# Allow all crawlers, including Googlebot
+User-agent: *
+Allow: /
+
+Sitemap: https://blog.li00000.xyz/sitemap.xml
