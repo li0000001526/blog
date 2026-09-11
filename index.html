@@ -4,6 +4,23 @@
 <meta charset="UTF-8" data-page-node-id="Wny2wY1tjGuw59BeqI13yf" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="IOO5W1WboWD20k1lWb31YH" />
 <title>RetirePlan · 全球养老规划</title>
+<meta name="description" content="全球养老规划指南：读懂三支柱养老体系、税优退休账户（401k/iDeCo/个人养老金）、资产配置策略与分龄规划方案，附退休储蓄复利测算器与每月缴存反推计算器。中/英/日三语。">
+<meta name="keywords" content="养老规划,退休规划,三支柱养老金,个人养老金,401k,iDeCo,复利计算器,退休储蓄,资产配置,retirement planning">
+<link rel="canonical" href="https://blog.li00000.xyz/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RetirePlan · 全球养老规划指南（含养老金计算器）">
+<meta property="og:description" content="读懂三支柱养老体系、税优退休账户与资产配置，附两枚交互养老金测算器。中/英/日三语。">
+<meta property="og:url" content="https://blog.li00000.xyz/">
+<meta property="og:site_name" content="RetirePlan">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RetirePlan · 全球养老规划指南">
+<meta name="twitter:description" content="三支柱养老体系 · 税优账户 · 资产配置 · 养老金计算器（中/英/日）">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"RetirePlan · 全球养老规划","url":"https://blog.li00000.xyz/","description":"全球养老规划指南：三支柱体系、税优退休账户、资产配置与分龄方案，含养老金计算器。","inLanguage":["zh-CN","en","ja"],"publisher":{"@type":"Person","name":"li00000"}}
+</script>
 <style>
   :root{
     --purple:#6C2BD9; --orange:#FF6B35; --teal:#00B8A9; --yellow:#FFD93D;
@@ -556,7 +573,9 @@ function setLang(l){
   });
   try{localStorage.setItem('lang',l);}catch(e){}
 }
-(function(){let l=null;try{l=localStorage.getItem('lang');}catch(e){}if(!l){const nav=(navigator.language||'zh').toLowerCase();if(nav.indexOf('zh')===0||nav.indexOf('cn')===0)l='zh';else if(nav.indexOf('ja')===0)l='ja';else l='en';}setLang(l);})();
+(function(){let l=null;try{l=localStorage.getItem('lang');}catch(e){}
+if(!l){try{const q=new URLSearchParams(location.search).get('lang');if(q&&['zh','en','ja'].includes(q)){l=q;try{localStorage.setItem('lang',q);}catch(e){}}}catch(e){}}
+if(!l){const nav=(navigator.language||'zh').toLowerCase();if(nav.indexOf('zh')===0||nav.indexOf('cn')===0)l='zh';else if(nav.indexOf('ja')===0)l='ja';else l='en';}setLang(l);})();
 
 function curLang(){ const h=document.documentElement.lang; return h==='ja'?'ja':h==='en'?'en':'zh'; }
 function fmt(sym,n){ return sym + Math.round(n).toLocaleString('en-US'); }
